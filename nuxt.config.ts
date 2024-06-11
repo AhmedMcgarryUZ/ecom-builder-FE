@@ -2,10 +2,18 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    "@nuxtjs/tailwindcss",
-    ["@pinia/nuxt", { autoImports: ["defineStore"] }],
+    '@nuxtjs/tailwindcss',
+    ['@pinia/nuxt', { autoImports: ['defineStore'] }],
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Lato: [300, 400, 700],
+        'Fjalla One': [400]
+      }
+    }],
+    'nuxt-icon',
+    '@nuxt/image'
   ],
   pinia: {
-    storesDirs: ["stores"],
-  },
-});
+    storesDirs: ['stores']
+  }
+})
