@@ -28,7 +28,7 @@
       <CardSimple v-slot="{ item }" v-bind="item" />
     </ContainerCarousel>
 
-    <ContainerCarousel title="Shop By Category" subtitle="Mens" :options="CATEGORY_CAROUSEL">
+    <ContainerCarousel title="Shop By Category" subtitle="Mens" :options="CATEGORY_CAROUSEL" items="items">
       <CardSimple v-slot="{ item }" v-bind="item" />
     </ContainerCarousel>
 
