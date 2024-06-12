@@ -22,7 +22,7 @@ import { SplideSlide } from '@splidejs/vue-splide'
 interface Props {
     title: string,
     subtitle?: string,
-    options: any,
+    options?: any,
 }
 
 defineProps<Props>()
