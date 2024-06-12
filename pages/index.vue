@@ -1,7 +1,7 @@
 <template>
   <div>
     <BannerSmall content="Free standard delivery when you spend £45 or more!" />
-    <HeroSimple>
+    <BannerLarge>
       <GenericOverlay placement="left" class="gap-4 px-12 py-8 rounded bg-slate-900/10 backdrop-blur-sm ">
         <div class="flex flex-col gap-2">
           <h1 class="text-8xl font-primary">
@@ -22,7 +22,7 @@
           </BaseButton>
         </div>
       </GenericOverlay>
-    </HeroSimple>
+    </BannerLarge>
 
     <ContainerCarousel title="Shop Latest Drops" subtitle="Mens">
       <CardSimple v-slot="{ item }" v-bind="item" />
@@ -33,7 +33,7 @@
     </ContainerCarousel>
 
     <BannerSmall content="25% Off womens when you spend £199 or more!" />
-    <HeroSimple>
+    <BannerLarge>
       <GenericOverlay placement="left" class="gap-4 px-12 py-8 rounded bg-slate-900/10 backdrop-blur-sm ">
         <div class="flex flex-col gap-2">
           <h1 class="text-8xl font-primary">
@@ -51,7 +51,7 @@
           </BaseButton>
         </div>
       </GenericOverlay>
-    </HeroSimple>
+    </BannerLarge>
 
     <ContainerCarousel title="Shop Latest Drops" subtitle="Women">
       <CardSimple v-slot="{ item }" v-bind="item" />
@@ -61,7 +61,7 @@
       <CardSimple v-slot="{ item }" v-bind="item" />
     </ContainerCarousel>
 
-    <HeroSimple class="backdrop-brightness-50">
+    <BannerLarge class="backdrop-brightness-50">
       <GenericOverlay placement="center" class="gap-2 px-12 py-8 rounded">
         <div class="flex flex-col gap-2">
           <h1 class="text-5xl uppercase font-primary">
@@ -82,7 +82,7 @@
           </BaseButton>
         </div>
       </GenericOverlay>
-    </HeroSimple>
+    </BannerLarge>
   </div>
 </template>
 
