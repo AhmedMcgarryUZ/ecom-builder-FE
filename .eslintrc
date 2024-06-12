@@ -4,9 +4,10 @@
         "vue/multi-word-component-names": "off",
         "vue/max-attributes-per-line": ["error", {
             "singleline": {
-                "max": 3
+                "max": 4
             }
         }],
-        "vue/attributes-order": ["error"]
+        "vue/attributes-order": ["error"],
+        "vue/attribute-hyphenation": "error"
     }
 }
