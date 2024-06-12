@@ -8,13 +8,13 @@
       --primary: theme("colors.slate.900");
       --secondary: theme("colors.slate.700");
   
-      --surface: theme("colors.slate.200");
-      --surface-low: theme("colors.slate.100");
+      --surface: theme("colors.slate.100");
+      --surface-low: theme("colors.slate.200");
       --surface-high: theme("colors.slate.50");
   
       --clear: theme("colors.slate.800");
       --clear-inverse: theme("colors.white");
-      --subtle: theme("colors.slate.500");
+      --subtle: theme("colors.slate.400");
       --subtle-inverse: theme("colors.slate.300");
     }
   

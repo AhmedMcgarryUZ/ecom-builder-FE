@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-surface-low">
+  <div class="bg-surface-high">
     <div class="container flex items-center justify-end w-full mx-auto text-sm">
       <NuxtLink
         v-for="link in links"

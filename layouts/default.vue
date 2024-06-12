@@ -1,9 +1,11 @@
 <template>
-  <main class="bg-surface-low">
+  <main class="bg-slate-50">
     <HeaderGlobal />
     <HeaderNav />
 
     <NuxtPage />
+
+    <Footer />
   </main>
 </template>
 
