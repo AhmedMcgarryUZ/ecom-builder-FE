@@ -2,7 +2,7 @@
   <div>
     <BannerSmall content="Free standard delivery when you spend £45 or more!" />
     <BannerLarge>
-      <GenericOverlay skda sada placement="left" class="gap-4 px-12 py-8 rounded bg-slate-900/10 backdrop-blur-sm ">
+      <GenericOverlay placement="left" class="gap-4 px-12 py-8 rounded bg-slate-900/10 backdrop-blur-sm ">
         <div class="flex flex-col gap-2">
           <h1 class="text-8xl font-primary">
             New Month, New Drops
