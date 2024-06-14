@@ -88,4 +88,7 @@
 
 <script setup>
 import { CATEGORY_CAROUSEL } from '~/constants/splide'
+
+const { data, pending, error } = await usePage()
+console.log(data, pending, error)
 </script>

@@ -15,5 +15,10 @@ export default defineNuxtConfig({
   ],
   pinia: {
     storesDirs: ['stores']
+  },
+  runtimeConfig: {
+    public: {
+      CMS_BASE_URL: process.env.CMS_BASE_URL
+    }
   }
 })
