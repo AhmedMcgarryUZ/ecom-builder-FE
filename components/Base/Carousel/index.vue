@@ -3,7 +3,7 @@
     <slot />
   </Splide>
 
-  <BaseCarouselActions @slide-left="slideLeft" @slide-right="slideRight" />
+  <BaseCarouselActions v-if="showArrows" @slide-left="slideLeft" @slide-right="slideRight" />
 </template>
 
 <script setup lang="ts">
@@ -13,11 +13,13 @@ import '@splidejs/vue-splide/css'
 import { BASE_CAROUSEL_OPTIONS } from '@/constants/splide'
 
 interface Props {
-    options: any
+    options: any,
+    showArrows: boolean,
 }
 
 withDefaults(defineProps<Props>(), {
-  options: () => BASE_CAROUSEL_OPTIONS
+  options: () => BASE_CAROUSEL_OPTIONS,
+  showArrows: true
 })
 
 const carousel = ref()

@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  components: {
+    global: true,
+    dirs: ['~/components']
+  },
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -15,5 +19,10 @@ export default defineNuxtConfig({
   ],
   pinia: {
     storesDirs: ['stores']
+  },
+  runtimeConfig: {
+    public: {
+      CMS_BASE_URL: process.env.CMS_BASE_URL
+    }
   }
 })

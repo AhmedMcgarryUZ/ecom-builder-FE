@@ -1,11 +1,11 @@
 <template>
   <div class="bg-surface-high">
-    <div class="container flex items-center justify-end w-full mx-auto text-sm">
+    <div class="container flex items-center justify-end w-full mx-auto text-xs lg:text-sm">
       <NuxtLink
         v-for="link in links"
         :key="link.slug"
         :to="link.slug"
-        class="flex items-center gap-1 px-4 py-1 tracking-tighter border-r first:border-x text-subtle border-subtle/70 font-secondary"
+        class="flex items-center gap-1 px-2 py-1 tracking-tighter border-r border-r-subtle lg:px-4 first:border-x first:border-x-subtle/70 text-subtle border-subtle/70 font-secondary last:pr-0 last:border-r-0"
       >
         <BaseIcon v-if="link.icon" :name="link.icon" class="text-lg" />
         {{ link.label }}

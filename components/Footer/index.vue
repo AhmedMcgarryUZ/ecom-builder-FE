@@ -1,5 +1,5 @@
 <template>
-  <div class="text-sm ">
+  <div class="text-sm text-clear">
     <div class="flex justify-center py-4 mx-auto divide-x-2 border-y-[0.1px] border-subtle bg-surface-high">
       <div class="flex items-center justify-end flex-1 gap-8 pr-8">
         <BaseIcon name="logos:facebook" class="w-8 h-8" />
@@ -61,7 +61,7 @@
           © 2024 aha
         </p>
 
-        <div class="flex text-xs divide-x-2">
+        <div class="flex text-xs">
           <p class="mx-2">
             Privacy & Cookies
           </p>

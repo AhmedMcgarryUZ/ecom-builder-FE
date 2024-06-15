@@ -1,7 +1,4 @@
-// @ts-ignore
-import type { Options } from '@splidejs/vue-splide'
-
-export const BASE_CAROUSEL_OPTIONS: Options = {
+export const BASE_CAROUSEL_OPTIONS = {
   gap: 16,
   arrows: false,
   pagination: false,
@@ -25,7 +22,7 @@ export const BASE_CAROUSEL_OPTIONS: Options = {
   }
 }
 
-export const CATEGORY_CAROUSEL: Options = {
+export const CATEGORY_CAROUSEL = {
   ...BASE_CAROUSEL_OPTIONS,
   perPage: 3
 }

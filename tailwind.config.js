@@ -1,7 +1,13 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
+    container: {
+      padding: '16px'
+    },
     extend: {
+      aspectRatio: {
+        insta: '9 / 16'
+      },
       fontFamily: {
         primary: ['Fjalla One', 'sans'],
         secondary: ['Lato', 'sans']

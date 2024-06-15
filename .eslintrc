@@ -8,6 +8,7 @@
             }
         }],
         "vue/attributes-order": ["error"],
-        "vue/attribute-hyphenation": "error"
+        "vue/attribute-hyphenation": "error",
+        "curly": "off"
     }
 }
