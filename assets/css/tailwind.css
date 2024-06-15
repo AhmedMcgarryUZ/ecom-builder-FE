@@ -25,7 +25,7 @@
     
         --clear: theme("colors.slate.50");
         --clear-inverse: theme("colors.slate.900");
-        --subtle: theme("colors.slate.500");
+        --subtle: theme("colors.slate.700");
         --subtle-inverse: theme("colors.slate.700");
     }
   }
