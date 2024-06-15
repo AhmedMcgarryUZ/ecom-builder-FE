@@ -1,14 +1,18 @@
 <template>
   <div v-if="widget">
-    <component v-bind="widget" :is="widget.is" v-if="widget.slots.length">
-      <PageComponent
+    <component :is="widget.is" v-if="widget.slots.length" v-bind="widget">
+      <template
         v-for="child in childWidgets"
         :key="child.id"
-        :widget="child"
-        :page-data="pageData"
-      />
+      >
+        <PageComponent
+          v-if="child"
+          :widget="child"
+          :page-data="pageData"
+        />
+      </template>
     </component>
-    <component v-bind="widget" :is="widget.is" v-else />
+    <component :is="widget.is" v-else v-bind="widget" />
   </div>
 </template>
 
@@ -17,10 +21,10 @@ import { computed } from 'vue'
 import type { Page } from '~/types/page'
 import type { Widget } from '~/types/widget'
 
-interface Props {
-  widget: Widget;
-  pageData: Page;
-}
+  interface Props {
+    widget: Widget;
+    pageData: Page;
+  }
 
 const props = defineProps<Props>()
 

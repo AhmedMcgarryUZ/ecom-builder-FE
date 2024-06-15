@@ -19,7 +19,7 @@
 // @ts-ignore
 import { SplideSlide } from '@splidejs/vue-splide'
 // @ts-ignore
-import { BASE_CAROUSEL_OPTIONS } from '~/constants/splide'
+import { BASE_CAROUSEL_OPTIONS } from '@/constants/splide'
 
 interface Props {
     title: string,
@@ -30,13 +30,11 @@ interface Props {
 const props = defineProps<Props>()
 
 const computedOptions = computed(() => {
-  if (props.options) {
-    return {
-      ...BASE_CAROUSEL_OPTIONS,
-      ...props.options
-    }
-  }
+  if (!props.options) return BASE_CAROUSEL_OPTIONS
 
-  return BASE_CAROUSEL_OPTIONS
+  return {
+    ...BASE_CAROUSEL_OPTIONS,
+    ...props.options
+  }
 })
 </script>
