@@ -94,7 +94,6 @@
 
 <script setup lang="ts">
 import type { Page } from '@/types/page'
-// import { CATEGORY_CAROUSEL } from '../constants/splide'
 
 const { data, pending } = await useService<Page>('/api/page')
 
