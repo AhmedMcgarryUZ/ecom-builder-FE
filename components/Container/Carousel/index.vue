@@ -7,7 +7,7 @@
       {{ title }}
     </template>
 
-    <BaseCarousel :options="options">
+    <BaseCarousel :options="computedOptions">
       <SplideSlide v-for="item in 5" :key="item">
         <slot item="item" />
       </SplideSlide>
@@ -18,6 +18,8 @@
 <script setup lang="ts">
 // @ts-ignore
 import { SplideSlide } from '@splidejs/vue-splide'
+// @ts-ignore
+import { BASE_CAROUSEL_OPTIONS } from '~/constants/splide'
 
 interface Props {
     title: string,
@@ -25,5 +27,16 @@ interface Props {
     options?: any,
 }
 
-defineProps<Props>()
+const props = defineProps<Props>()
+
+const computedOptions = computed(() => {
+  if (props.options) {
+    return {
+      ...BASE_CAROUSEL_OPTIONS,
+      ...props.options
+    }
+  }
+
+  return BASE_CAROUSEL_OPTIONS
+})
 </script>
