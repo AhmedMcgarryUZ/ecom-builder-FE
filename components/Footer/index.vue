@@ -61,7 +61,7 @@
           © 2024 aha
         </p>
 
-        <div class="flex text-xs divide-x-2">
+        <div class="flex text-xs">
           <p class="mx-2">
             Privacy & Cookies
           </p>

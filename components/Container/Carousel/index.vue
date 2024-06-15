@@ -1,13 +1,18 @@
 <template>
-  <GenericContainer>
+  <GenericContainer :full-bleed="fullBleed">
     <template #subtitle>
       {{ subtitle }}
     </template>
     <template #title>
       {{ title }}
     </template>
+    <template #action>
+      <!-- <BaseButton type="label" class="text-sm font-bold capitalize font-secondary">
+        View All
+      </BaseButton> -->
+    </template>
 
-    <BaseCarousel :options="computedOptions">
+    <BaseCarousel :options="computedOptions" :show-arrows="showArrows">
       <SplideSlide v-for="item in 5" :key="item">
         <slot item="item" />
       </SplideSlide>
@@ -25,9 +30,15 @@ interface Props {
     title: string,
     subtitle?: string,
     options?: any,
+    showArrows?: boolean,
+    fullBleed?: boolean
 }
 
-const props = defineProps<Props>()
+const props = withDefaults(defineProps<Props>(), {
+  subtitle: undefined,
+  options: undefined,
+  fullBleed: false
+})
 
 const computedOptions = computed(() => {
   if (!props.options) return BASE_CAROUSEL_OPTIONS
@@ -38,3 +49,9 @@ const computedOptions = computed(() => {
   }
 })
 </script>
+
+<style lang="css">
+.hero {
+    padding: 0px;
+}
+</style>
